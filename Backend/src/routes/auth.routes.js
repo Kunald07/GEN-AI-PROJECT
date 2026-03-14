@@ -10,7 +10,7 @@ const authRouter = Router();
  * @access Public
  */
 
-authRouter.post("./register", authController.registerUserController);
+authRouter.post("/register", authController.registerUserController);
 
 /**
  * @route POST /api/auth/login

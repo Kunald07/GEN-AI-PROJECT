@@ -11,8 +11,8 @@ async function authUser(req, res, next) {
   }
 
   const isTokenBlacklisted = await tokenBlacklistModel.findOne({
-    token,
-  });
+    token
+  })
 
   if (isTokenBlacklisted) {
     return res.status(401).json({
