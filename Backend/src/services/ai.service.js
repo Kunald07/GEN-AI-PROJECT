@@ -123,8 +123,7 @@ async function generateInterviewReport({
     },
   });
 
-
-  return JSON.parse(response.text)
+  return JSON.parse(response.text);
 }
 
 // async function generatePdfFromHtml(htmlContent) {
